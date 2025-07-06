@@ -7,9 +7,9 @@ import './index.css';
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <PostHogProvider
-      apiKey={import.meta.env.VITE_PUBLIC_POSTHOG_KEY}
+      apiKey={'phc_8HAU7haRJW1XAby18QlMOKWATCBxHzE8hFhF31nlGGj'}
       options={{
-        api_host: import.meta.env.VITE_PUBLIC_POSTHOG_HOST,
+        api_host: 'https://eu.i.posthog.com',
         defaults: '2025-05-24',
         capture_exceptions: true, // This enables capturing exceptions using Error Tracking
         debug: import.meta.env.MODE === 'development',
