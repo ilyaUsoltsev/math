@@ -23,7 +23,7 @@ interface Problem {
 }
 
 function App() {
-  const [selectedAgeGroup, setSelectedAgeGroup] = useState<AgeGroup>('little');
+  const [selectedAgeGroup, setSelectedAgeGroup] = useState<AgeGroup>('explorer');
   const [selectedOperations, setSelectedOperations] = useState<Set<Operation>>(new Set(['addition']));
   const [currentProblem, setCurrentProblem] = useState<Problem | null>(null);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
